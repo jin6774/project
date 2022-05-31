@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth@125&display=swap');
+/* font-family: 'Archivo', sans-serif; */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/*font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;*/
+
+/* main */
+#main_area {
+    position: static;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    background-image: url(../img/main_bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    fill: #2C2C2C;
+    text-align: center;
+    scrollbar-width: 0;
+}
+#main_area .main_wrap {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #2C2C2C;
+}
+
+/* title */
+.main_wrap .title_area {
+    height: 50px;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 30px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #2C2C2C;
+    float: left;
+    /* border: solid 1px red; */
+}
+.title_area #title_logo {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    /* border: solid 1px red; */
+}
+.title_area #title_logo img {
+    height: 40px;
+    display: block;
+    /* border: solid 1px red; */
+}
+.title_area #title_UP {
+    position: absolute;
+    font-size: 14px;
+    top: 35px;
+    right: 40px;
+    /* border: solid 1px red; */
+}
+/* moving */
+.moving_area {
+    user-select: none;
+    font-size: 200px;
+    width: 100%;
+    float: left;
+}
+.moving_area .moving_text {
+    display: block;
+    width: 990%;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 20s linear infinite;
+}
+.moving_text img {
+    height: 90px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.moving_text .hi1 {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    letter-spacing: -20px;
+}
+.moving_text .hi2 {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    margin-top: -50px;
+    letter-spacing: -20px;
+}
+.moving_text .hi3 {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    margin-top: -100px;
+    letter-spacing: -20px;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+/* title_bottom */
+.title_b_area {
+    height: 80px;
+    width: 96%;
+    margin: 0 auto;
+    position: absolute;
+    top: 660px;
+    left: 30px;
+    border-top: solid 1px #2C2C2C;
+    position: absolute;
+    float: left;
+    font-size: 14px;
+    overflow: hidden;
+}
+#title_b_text {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+#title_b_text ul {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+#title_b_text li {
+    float: left;
+    list-style: none;
+    overflow: hidden;
+}
+#title_b_text #t1 {
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+    overflow: hidden;
+}
+#title_b_text #t2 {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    bottom: 30px;
+    overflow: hidden;
+}
+#title_b_text #t3 {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    overflow: hidden;
+}
+/* main2*/
+#main2_area {
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+/*overveiw1*/
+#ov1 {
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+    background-color: #00CE3F;
+    margin: 0 auto;
+}
+.ov_text {
+    margin: 0 auto;
+    margin-top: 70px;
+}
+table, tr, th, td {
+    vertical-align: top;
+}
+.ov_text th {
+    font-size: 20px;
+}
+.ov_text td {
+    font-size: 15px;
+    padding-left: 60px;
+}
+/*problem*/
+#problem_wrap {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    height: 2250px;
+    background-color: #1a1a1a;
+}
+#problem_wrap #pb1_area {
+    display: block;
+    margin-top: 300px;
+    text-align: center;
+}
+.area {
+    /* float: right; */
+    width: 75%;
+}
+/*overveiw2*/
+.ov_text2 {
+    margin: 0 auto;
+    margin-top: 100px;
+    vertical-align: top;
+}
+.ov_text2 th {
+    font-size: 20px;
+}
+.ov_text2 td {
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 60px;
+}
+/*problem2*/
+#pb2_area {
+    display: block;
+    margin-top: 300px;
+    height: 350px;
+}
+#pb2_area img {
+    height: 350px;
+    float: left;
+}
+#pb2_area .pb_text {
+    float: right;
+    margin-top: 195px;
+    text-align: right;
+}
+.pb_text h1 {
+    font-size: 40px;
+}
+.pb_text p {
+    font-size: 16px;
+    font-weight: 200;
+}
+/*problem3*/
+#pb3_area {
+    display: block;
+    margin-top: 70px;
+    height: 350px;
+}
+#pb3_area img {
+    height: 350px;
+    float: right;
+}
+#pb3_area .pb_text {
+    float: left;
+    margin-top: 195px;
+}
+/*problem4*/
+#pb4_area {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/pb4.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+#pb4_area .pb_text {
+    float: left;
+    margin-top: 520px;
+}
+/*ck_wrap*/
+#ck_wrap {
+    color: #353535;
+    width: 100%;
+    height: 1540px;
+}
+#ck_wrap .pb_text p {
+    font-size: 16px;
+    font-weight: 300;
+}
+#ck_area {
+    margin-top: 300px;
+}
+#ck1 {
+    display: block;
+    text-align: right;
+}
+#ck1 img {
+    margin-top: 20px;
+    height: 273px;
+}
+/*worry_area*/
+#worry_area {
+    width: 100%;
+    height: 100px;
+    margin-top: 300px;
+    display: flex;
+}
+#worry_area .pb_text {
+    display: block;
+    width: 1170px;
+    margin: 0 auto;
+    float: left;
+}
+#worry_area .pb_text h1 {
+    float: left;
+}
+#worry_area .pb_text p {
+    float: right;
+    margin-left: 30px;
+}
+/*persona*/
+#persona_area {
+    display: block;
+}
+.persona {
+    margin-top: 30px;
+    width: 190%;
+    height: 210px;
+}
+.persona img {
+    height: 210px;
+    margin-left: 20px;
+}
+#ps1 {
+    margin-left: -85px;
+}
+#ps2 {
+    margin-left: -255px;
+}
+/*target*/
+#target {
+    width: 100%;
+    height: 400px;
+    float: left;
+    background-image: url(../img/tg1.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+.tg_text {
+    margin-top: 120px;
+    text-align: left;
+}
+.tg_text h2{
+    font-size: 30px;
+}
+.tg_text h1{
+    font-size: 40px;
+}
+
+
+
